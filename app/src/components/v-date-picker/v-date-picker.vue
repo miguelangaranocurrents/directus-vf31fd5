@@ -153,6 +153,7 @@ function setToNow() {
 		<CalendarRoot
 			v-slot="{ weekDays, grid, date }"
 			:model-value="calendarValue"
+			:locale="userStore.language"
 			:disabled="disabled"
 			class="calendar"
 			fixed-weeks
